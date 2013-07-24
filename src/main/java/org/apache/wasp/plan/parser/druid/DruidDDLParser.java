@@ -651,7 +651,7 @@ public class DruidDDLParser extends DruidParser {
 
     if (!metaEventOperation.isLegalDescFields(fTable, desc)) {
       throw new UnsupportedException(
-          "Currently we only support the ascending and descending time field.");
+          "Currently we only support the ascending and descending with the datetime field.");
     }
 
     List<String> colList = new ArrayList<String>();
